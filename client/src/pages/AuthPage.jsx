@@ -286,7 +286,7 @@ export default function AuthPage() {
       <div style={{
         minHeight: '100dvh', width: '100%',
         boxSizing: 'border-box',
-        background: 'linear-gradient(155deg, #eef2ff 0%, #f5f3ff 35%, #fdf4ff 65%, #fff1f5 100%)',
+        background: 'linear-gradient(155deg, #1e1b4b 0%, #312e81 30%, #1e3a6e 65%, #0f2744 100%)',
         display: 'flex', alignItems: 'center', justifyContent: 'center',
         position: 'relative', overflow: 'hidden',
         padding: '20px 16px',
