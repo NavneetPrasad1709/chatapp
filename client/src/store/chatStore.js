@@ -2,7 +2,7 @@ import { create } from 'zustand';
 import { io } from 'socket.io-client';
 import axios from 'axios';
 
-const API = '/api';
+const API = `${import.meta.env.VITE_API_URL}/api`;
 let socket = null;
 
 export const useChatStore = create((set, get) => ({
@@ -17,7 +17,7 @@ export const useChatStore = create((set, get) => ({
 
   initSocket: (token) => {
     if (socket?.connected) return;
-    socket = io(window.location.origin, {
+    socket = io(import.meta.env.VITE_API_URL, {
       auth: { token },
       transports: ['websocket', 'polling'],
     });
